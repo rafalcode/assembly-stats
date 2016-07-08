@@ -57,6 +57,11 @@ Stats::Stats(string filename, unsigned long minimumLength)
         {
             seq = new Fasta();
         }
+        else if ( (filetype == FASTQGZ_FILE) | (filetype == FASTAGZ_FILE) )
+        {
+            cerr << "Input file type is in compressed format. Inflating of compressed files is not yet implemented.  Aborting" << endl;
+            exit(1);
+        }
         else
         {
             cerr << "Input file type not recognised as fasta or fastq.  Aborting" << endl;

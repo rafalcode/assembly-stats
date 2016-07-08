@@ -3,6 +3,8 @@ assembly-stats
 
 Get assembly statistics from FASTA and FASTQ files.
 
+RF fork: it would be nice to also read gzipped fasta and fastq files, slowly introducing some changes.
+
 Installation
 ------------
 
